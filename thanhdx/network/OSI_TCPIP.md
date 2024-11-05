@@ -81,4 +81,18 @@
 ### Tốc độ: UDP nhanh hơn TCP vì không cần các bước kiểm tra lỗi và xác nhận
 ## UDP thích hợp cho các ứng dụng yêu cầu tốc độ nhanh hơn và có thể chấp nhận mất mát dữ liệu, chẳng hạn như video streaming, voice over IP(VoiIP), game online
 # TCP/IP(Transmission Control Protocols / Internet Protocols)
-## Định nghĩa: TCP/IP là bộ giao thức trao đổi thông tin được sử dụng để truyền tải và 
+## Định nghĩa: TCP/IP là bộ giao thức trao đổi thông tin được sử dụng để truyền tải và kết nối các thiết bị trong mạng Internet. TCP/IP được phát triển để mạng được tin cậy hơn cùng với khả năng phục hồi tự động
+## Chức năng của các tầng TCP/IP
+### - Một mô hình TCP/IP tiêu chuẩn bao gồm 4 lớp được chồng lên nhau, bắt đầu từ tầng thấp nhất là tầng vật lý(Physical) -> Tầng mạng(Network) -> Tầng giao vận(Transport) và cuối cùng là tầng ứng dụng(Application)
+### 1. Tầng vật lý
+### - Là sự kết hợp giữa tầng vật lý và tầng liên kết dữ liệu của mô hình OSI. Chịu trách nhiệm truyền dữ liệu giữa hai thiết bị trong cùng 1 mạng
+### - Tại đây các gói dữ liệu được đóng vào khung(frame) và được định tuyến đến đích đã được chỉ định ban đầu
+### 2. Tầng mạng
+### - Gần giống như tầng mạng của mô hình OSI. Tại đây, nó cũng được định nghĩa là một giao thức chịu trách nhiệm truyền tải dữ liệu một cách logic trong mạng
+### - Các phân đoạn dữ liệu sẽ được đóng gói(package) với kích thước mỗi gói phù hợp với mạng chuyển mạch mà nó dùng để truyền dữ liệu 
+### - Lúc này các gói tin được chèn thêm phàn Header chứa thông tin của tầng mạng và tiếp tục được chuyển đến tầng tiếp theo. Các giao thức hính trong tầng này là IP, ICMP và ARP
+### 3. Tầng vận chuyển
+### - Chức năng chính của tầng 3 là xử lý vấn đề giao tiếp giữa các máy chủ trong cùng một mạng hoặc khác mạng được kết nối với nhau thông qua bộ định tuyến. Tại đây dữ liệu sẽ được phân đoạn, mỗi đoạn sẽ không bằng nhau nhưng kích thước phải nhỏ hơn 64KB.
+### - Trong tầng này còn 2 giao thức cốt lõi là TCP và UDP. Trong đó TCP đảm bảo chất lượng gói tin nhưng tiêu tốn thời gian khá lâu để kiểm tra đầy đủ thông tin từ thứ tự dữ liệu cho đến việc kiểm soát các vấn đề tắc nghẽn lưu lượng dữ liệu. Trái với điều đó, UDP cho thấy tốc độ truyền tải nhanh hơn nhưng lại không đảm bảo được chất lượng dữ liệu gói tin
+### 4. Tầng ứng dụng
+### - Đây là lớp giao tiếp trên cùng của mô hình. Tầng ứng dụng đảm nhận vai trò giao tiếp dữ liệu 2 máy khác nhau thông qua các dịch vụ mạng khác nhau
