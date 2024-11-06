@@ -1,6 +1,7 @@
-# Mô hình OSI
+<!-- OSI_TCP/IP-TOC -->
+# * [Mô hình OSI](#-mô-hình-osi)
 ## Định nghĩa: OSI là mô hình căn bản về tiến trình truyền thông, thiết lập các tiêu chuẩn kiến trúc mạng ở mức quốc tế, là cơ sở chung để các hệ thống khác nhau có thể liên kết và truyền thông được với nhau.
-## Mô hình OSI gồm 7 tầng:
+## 1. Mô hình OSI gồm 7 tầng:
 ### 1. Tầng vật lý (Physical)
 ### 2. Tầng liên kết (Data Link)
 ### 3. Tầng mạng (Network)
@@ -8,11 +9,11 @@
 ### 5. Tầng phiên (Session)
 ### 6. Tầng trình bày (Presentation)
 ### 7. Tầng ứng dụng (Application)
-## Các nguyên tắc phân tầng mô hình OSI
+## 2. Các nguyên tắc phân tầng mô hình OSI
 ### - Mô hình OSI gồm 7 tầng. OSI là hệ thống mở, có khả năng kết nối tới các hệ thống khác nhau, tương thích với các chuẩn OSI
 ### - Quá trình xử lý các ứng dụng được thực hiện trong các hệ thống mở, đồng thời duy trì các hoạt động kết nối giữa các hệ thống
 ### -  Thiết lập kênh logic nhằm mục đích thực hiện việc trao đổi thông tin giữa các thực thể
-## Các giao thức trong mô hình OSI:
+## 3. Các giao thức trong mô hình OSI:
 ### Giao thức hướng liên kết (Connected Oriented Protocols)
 ### - Định nghĩa: Giao thức này thiết lập một kết nối trước khi truyền dữ liệu. Dữ liệu được truyền trong một phiên làm việc đã được thiết lập, và thường có cơ chế kiếm soát lỗi và quản lý luồng
 ### - Đặc điểm: 
@@ -23,7 +24,7 @@
 ### - Đặc điểm: 
 ### + Thích hợp cho các ứng dụng cần tốc độ nhanh hơn và không cần độ tin cậy cao, như streamin, game
 ### + Không đảm bảo thứ tự hoặc tính toàn vẹn của dữ liệu
-## Vai trò của các tầng
+## 4. Vai trò của các tầng
 ### 1. Tầng vật lý:
 ### - Xử lý truyền dữ liệu dưới dạng tín hiệu vật lý qua các môi trường truyền dữ liệu như cáp đồng, cáp quang hoặc sóng vô tuyến
 ### - Chức năng chính: 
@@ -66,14 +67,14 @@
 ### + Cung cấp các dịch vụ như email, truyền file(FTP), duyệt web(HTTP)
 ### + Đảm bảo tính bảo mật và xác thực trong giao tiếp (SSL/TLS)
 ### + Quản lý các giao thức ứng dụng như HTTP, SMTP, FTP
-## TCP(Transmission Control Protocols)
+## 5. TCP(Transmission Control Protocols)
 ### Định nghĩa: TCP là giao thức truyền thông tin định hướng kết nối, đảm bảo độ tin cậy và thứ tự trong việc truyền dữ liệu giữa hai thiết bị. Nó sử dụng các cơ chế kiểm tra lỗi và xác nhận để đảm bảo rằng tất cả các gói dữ liệu được gửi và nhận chính xác
 ### - Định hướng kế nối: TCP thiết lập một kết nối giữa hai thiết bị trước khi truyền dữ liệu
 ### - Đảm bảo độ tin cậy: TCP đảm bảo rằng dữ liệu được gửi và nhận chính xác bằng cách sử dụng kiểm tra lỗi vàg xác nhận. Nếu gói tin bị mất, nó sẽ gửi lại
 ### - Truyền dữ liệu theo thứ tự: Dữ liệu được gửi qua TCP sẽ được nhận theo thứ tự mà nó được gửi
 ### - Tốc độ: Do có nhiều tính năng kiểm soát, TCP thường chậm hơn so với UDP
 ## TCP thích hợp cho các ứng dụng cần độ tin cậy như web, email, và truyền file
-## UDP(User Datagram Protocols)
+## 6. UDP(User Datagram Protocols)
 ### Định nghĩa: UDP là giao thức truyền thông tin không định hướng kết nối, cho phép dữ liệu mà không đảm bảo độ tin cậy hoặc thứ tự. UDP nhanh hơn TCP, nhưng không có các cơ chế để đảm bảo rằng gói dữ liệu đến nơi an toàn hoặc đúng thứ tự
 ### Không định hướng kết nối: UDP không thiết lập kết nối trước khi gửi dữ liệu mà gửi luôn dữ liệu
 ### Không đảm bảo độ tin cậy: UDP không kiểm tra lỗi hay xác nhận, nên không đảm bảo dữ liệu được nhận chính xác
@@ -82,7 +83,7 @@
 ## UDP thích hợp cho các ứng dụng yêu cầu tốc độ nhanh hơn và có thể chấp nhận mất mát dữ liệu, chẳng hạn như video streaming, voice over IP(VoiIP), game online
 # TCP/IP(Transmission Control Protocols / Internet Protocols)
 ## Định nghĩa: TCP/IP là bộ giao thức trao đổi thông tin được sử dụng để truyền tải và kết nối các thiết bị trong mạng Internet. TCP/IP được phát triển để mạng được tin cậy hơn cùng với khả năng phục hồi tự động
-## Chức năng của các tầng TCP/IP
+## 7. Chức năng của các tầng TCP/IP
 ### - Một mô hình TCP/IP tiêu chuẩn bao gồm 4 lớp được chồng lên nhau, bắt đầu từ tầng thấp nhất là tầng vật lý(Physical) -> Tầng mạng(Network) -> Tầng giao vận(Transport) và cuối cùng là tầng ứng dụng(Application)
 ### 1. Tầng vật lý
 ### - Là sự kết hợp giữa tầng vật lý và tầng liên kết dữ liệu của mô hình OSI. Chịu trách nhiệm truyền dữ liệu giữa hai thiết bị trong cùng 1 mạng
@@ -96,3 +97,8 @@
 ### - Trong tầng này còn 2 giao thức cốt lõi là TCP và UDP. Trong đó TCP đảm bảo chất lượng gói tin nhưng tiêu tốn thời gian khá lâu để kiểm tra đầy đủ thông tin từ thứ tự dữ liệu cho đến việc kiểm soát các vấn đề tắc nghẽn lưu lượng dữ liệu. Trái với điều đó, UDP cho thấy tốc độ truyền tải nhanh hơn nhưng lại không đảm bảo được chất lượng dữ liệu gói tin
 ### 4. Tầng ứng dụng
 ### - Đây là lớp giao tiếp trên cùng của mô hình. Tầng ứng dụng đảm nhận vai trò giao tiếp dữ liệu 2 máy khác nhau thông qua các dịch vụ mạng khác nhau
+<!-- OSI_TCP/IP-TOC-config 
+    numbering=true
+    autoSave=true
+    /OSI_TCP/IP-TOC-config-->
+<!-- /OSI_TCP/IP-TOC -->
