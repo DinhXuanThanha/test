@@ -1,5 +1,11 @@
 <!-- OSI_TCP/IP-TOC -->
-# * [Mô hình OSI](#-mô-hình-osi)
+# [Mô hình OSI](#mô-hình-osi)
+## [1. Mô hình OSI gồm 7 tầng](#1-mô-hình-osi-gồm-7-tầng)
+## [2. Các nguyên tắc phân tầng mô hình OSI](#2-các-nguyên-tắc-phân-tầng-mô-hình-osi)
+## [3. Các giao thức trong mô hình OSI](#3-các-giao-thức-trong-mô-hình-osi)
+## [4. Vai trò của các tầng](#4-vai-trò-của-các-tầng)
+
+# Mô hình OSI
 ## Định nghĩa: OSI là mô hình căn bản về tiến trình truyền thông, thiết lập các tiêu chuẩn kiến trúc mạng ở mức quốc tế, là cơ sở chung để các hệ thống khác nhau có thể liên kết và truyền thông được với nhau.
 ## 1. Mô hình OSI gồm 7 tầng:
 ### 1. Tầng vật lý (Physical)
