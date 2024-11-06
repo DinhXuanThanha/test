@@ -1,9 +1,12 @@
 <!-- OSI_TCP/IP-TOC -->
 # [Mô hình OSI](#mô-hình-osi)
 ## [1. Mô hình OSI gồm 7 tầng](#1-mô-hình-osi-gồm-7-tầng)
-## [2. Các nguyên tắc phân tầng mô hình OSI](#2-các-nguyên-tắc-phân-tầng-mô-hình-osi)
+## [2. Các nguyên tắc phân tầng mô hình OSI](#3-các-giao-thức-trong-mô-hình-osi)
 ## [3. Các giao thức trong mô hình OSI](#3-các-giao-thức-trong-mô-hình-osi)
-## [4. Vai trò của các tầng](#4-vai-trò-của-các-tầng)
+## [4. Vai trò của các tầng](#3-các-giao-thức-trong-mô-hình-osi)
+## [5. TCP (Transmission Control Protocol)](#5-tcptransmission-control-protocols)
+## [6. UDP (User Datagram Protocol)](#6-udpuser-datagram-protocols)
+## [7. TCP/IP(Transmission Control Protocols / Internet Protocols)](#7-tcpiptransmission-control-protocols--internet-protocols-1)
 
 # Mô hình OSI
 ## Định nghĩa: OSI là mô hình căn bản về tiến trình truyền thông, thiết lập các tiêu chuẩn kiến trúc mạng ở mức quốc tế, là cơ sở chung để các hệ thống khác nhau có thể liên kết và truyền thông được với nhau.
@@ -87,9 +90,9 @@
 ### Không theo thứ tự: Các gói dữ liệu có thể đến theo thứ tự khác với thứ tự gửi
 ### Tốc độ: UDP nhanh hơn TCP vì không cần các bước kiểm tra lỗi và xác nhận
 ## UDP thích hợp cho các ứng dụng yêu cầu tốc độ nhanh hơn và có thể chấp nhận mất mát dữ liệu, chẳng hạn như video streaming, voice over IP(VoiIP), game online
-# TCP/IP(Transmission Control Protocols / Internet Protocols)
+# 7. TCP/IP(Transmission Control Protocols / Internet Protocols)
 ## Định nghĩa: TCP/IP là bộ giao thức trao đổi thông tin được sử dụng để truyền tải và kết nối các thiết bị trong mạng Internet. TCP/IP được phát triển để mạng được tin cậy hơn cùng với khả năng phục hồi tự động
-## 7. Chức năng của các tầng TCP/IP
+## Chức năng của các tầng TCP/IP
 ### - Một mô hình TCP/IP tiêu chuẩn bao gồm 4 lớp được chồng lên nhau, bắt đầu từ tầng thấp nhất là tầng vật lý(Physical) -> Tầng mạng(Network) -> Tầng giao vận(Transport) và cuối cùng là tầng ứng dụng(Application)
 ### 1. Tầng vật lý
 ### - Là sự kết hợp giữa tầng vật lý và tầng liên kết dữ liệu của mô hình OSI. Chịu trách nhiệm truyền dữ liệu giữa hai thiết bị trong cùng 1 mạng
