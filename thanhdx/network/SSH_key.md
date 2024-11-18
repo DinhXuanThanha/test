@@ -1,0 +1,4 @@
+# SSH Key
+## SSH key (Secure Shell key) là một cặp mã hóa bao gồm một khóa riêng tư (private key) và một khóa công khai (public key) được sử dụng trong giao thức SSH để xác thực và bảo mật quá trình truyền tải dữ liệu và đăng nhập từ xa vào các máy chủ. SSH key thường được sử dụng để thay thế việc nhập mật khẩu khi kết nối đến một máy chủ từ xa.
+## - Khóa công khai (Public key): Được cài đặt trên máy chủ SSH mà bạn muốn kết nối đến. Khóa này được chia sẻ công khai.
+## - Khóa riêng tư (Private key): Nằm trên máy tính của người dùng và được bảo mật. Khóa này được sử dụng để xác minh danh tính của người dùng khi kết nối đến máy chủ.

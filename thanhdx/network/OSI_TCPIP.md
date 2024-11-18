@@ -13,11 +13,11 @@
 ## 1. Mô hình OSI gồm 7 tầng:
 ### 1. Tầng vật lý (Physical)
 ### 2. Tầng liên kết (Data Link)
-### 3. Tầng mạng (Network)
-### 4. Tầng vận chuyển (Transport)
+### * 3. Tầng mạng (Network)
+### * 4. Tầng vận chuyển (Transport)
 ### 5. Tầng phiên (Session)
 ### 6. Tầng trình bày (Presentation)
-### 7. Tầng ứng dụng (Application)
+### * 7. Tầng ứng dụng (Application)
 ## 2. Các nguyên tắc phân tầng mô hình OSI
 ### - Mô hình OSI gồm 7 tầng. OSI là hệ thống mở, có khả năng kết nối tới các hệ thống khác nhau, tương thích với các chuẩn OSI
 ### - Quá trình xử lý các ứng dụng được thực hiện trong các hệ thống mở, đồng thời duy trì các hoạt động kết nối giữa các hệ thống

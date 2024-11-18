@@ -1,0 +1,8 @@
+# Debug
+## Debug là quá trình tìm kiếm ra lỗi hay nguyên nhân gây ra lỗi (bug ở đâu) để có hướng sửa lỗi (fix bug). Việc kiểm soát lỗi của rất nhiều các dòng code là việc không hề đơn giản với những người lập trình viên chưa có nhiều kinh nghiệm.
+## Mục đích của việc debug: Mục đích của Debug không chỉ là để loại bỏ lỗi (error) khỏi chương trình mà quan trọng hơn còn để giúp lập trình viên hiểu rõ hơn sự thực thi của chương trình. Một lập trình viên không có khả năng Debug hiệu quả thì cũng giống như bị mù vậy.
+## Các phương pháp debug: 
+### - Debugging Tool – dùng công cụ để Debug – là phương pháp Debug đi sâu vào source code nhất. Thường thì chúng ta gọi những Debugging Tool này là Debugger. Những Debugger phần mềm thông dụng là Microsoft Visual Studio Debugger , GNU Debugger . Ngoài ra còn có những Debugger phần cứng được thiết kế kèm cho các hệ thống nhúng (Embedded System) bởi các thiết kế nhúng không phải là những thiết kế mang tính mục đích chung (General-purpose) mà thường được thiết kế trên các platform riêng biệt phục vụ các ứng ứng dụng riêng biệt nên cũng cần những Debugger đặc thù đi kèm.
+### - Printlining: đơn giản là bạn thêm vào source code của bạn những dòng lệnh để in ra những thông tin mà bạn cần theo dõi trong quá trình thực thi. Chẳng hạn nếu bạn dùng Arduino IDE thì bạn sẽ không có Debugger và cách Debug phù hợp nhất là bạn dùng Serial.print().
+### - Logging: tạo ra một biểu mẫu để ghi (log) lại những thông tin sau khi chương trình thực thi. Phân tích nguyên nhân lỗi dựa trên những thông tin này.
+###

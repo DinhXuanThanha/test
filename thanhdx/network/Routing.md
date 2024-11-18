@@ -1,4 +1,4 @@
-# Routing
+# Routing(Định tuyến)
 ## Định nghĩa: Routing là kỹ thuật chọn đường đi cho dữ liệu từ mạng này đến mạng khác sao cho dữ liệu đến được đích cuối cùng một cách hiệu quả. Quá trình này diễn ra ở tầng Network (tầng 3) của mô hình OSI, sử dụng địa chỉ IP để định tuyến các gói tin.
 ## Vai trò của routing: Routing giúp tối ưu hóa việc truyền dữ liệu qua các mạng lớn và phức tạp bằng cách chọn đường đi phù hợp nhất, đảm bảo độ trễ thấp, băng thông tốt và an toàn cho dữ liệu. Điều này rất quan trọng khi mạng có nhiều đường dẫn khác nhau, đặc biệt là trong môi trường mạng Internet.
 ## Các loại routing
