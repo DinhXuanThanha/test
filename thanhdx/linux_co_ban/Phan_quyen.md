@@ -25,3 +25,17 @@
   Ví dụ: chmod 755 folder.
 * chown: Dùng để thay đổi chủ sở hữu.
   Ví dụ: chown user: group file.txt/
+note authorise
+## 7. Thêm user vào nhóm:
+* sudo usermod -aG <group_name> <username>
+## 8. Xóa user khỏi nhóm:
+* sudo gpasswd -d <username> <groupname>
+## 9. Tạo nhóm:
+* sudo groupadd tên_nhóm
+## 10. Kiểm tra nhóm vừa tạo:
+* getent group hoặc cat /etc/group
+## 11. Xóa nhóm:
+* sudo groupdel tên_nhóm
+## 12. Kiểm tra thành viên nhóm:
+* getent group tên_nhóm
+

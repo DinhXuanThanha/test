@@ -13,7 +13,7 @@
   
 ## Tạo 1 file .txt có nội dung là "Hello" trong thư mục /data
 * Kiểm tra quyền truy cập vào /data: ls -ld /data
-* 1. ếu hiển thị drwxr-xr-x hoặc tương tự, bạn có quyền đọc và ghi (với sudo nếu cần).
+* 1. Nếu hiển thị drwxr-xr-x hoặc tương tự, bạn có quyền đọc và ghi (với sudo nếu cần).
 * 2. Nếu không có quyền, gán quyền ghi với lệnh: sudo chmod -R 777 /data
 * Tạo file txt trong /data: echo "Hello" | sudo tee /data/hello.txt
 * Xác nhận file đã được tạo và chừa nội dung "Hello": cat /data/hello.txt
