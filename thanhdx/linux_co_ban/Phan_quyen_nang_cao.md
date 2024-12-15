@@ -2,7 +2,8 @@
 ## Ngoài các quyền cơ bản (read, write, execute), Linux cung cấp các quyền nâng cao để quản lý chi tiết hơn cách người dùng và nhóm tương tác với tệp và thư mục.
 ## 1. SUID (Set User ID)
 * Mô tả:
-* * Khi quyền SUID được gắn vào một tệp thực thi, người dùng chạy tệp này sẽ tạm thời có quyền của chủ sở hữu tệp (thường là root), bất kể quyền của chính người dùng đó.
+* * SUID hay Set user ID, được sử dụng trên các file thực thi (executable files) để cho phép việc thực thi được thực hiện dưới owner của file thay vì thực hiện như user đang loggin trong hệ thống. .
+SUID cũng có thể được sử dụng để thay đổi ownership của files được tạo hoặc di chuyển nó đến một thư mục mà owner của nó sẽ là owner của thư mục chuyển đến thay vì là owner nó được tạo ra.
 * * Chỉ áp dụng cho tệp thực thi, không áp dụng cho thư mục.
 * Ký hiệu:
 * * Ký hiệu SUID là chữ s thay thế quyền x trong phần user: -rwsr-xr-x  1 root root 12345 Dec  2 10:00 /usr/bin/passwd

@@ -38,4 +38,11 @@ note authorise
 * sudo groupdel tên_nhóm
 ## 12. Kiểm tra thành viên nhóm:
 * getent group tên_nhóm
-
+# Tạo thư mục LinuxPractice
+mkdir ~/Desktop/LinuxPractice
+# Tạo cấu trúc thư mục lồng nhau
+mkdir -p ~/Desktop/LinuxPractice/FolderA ~/Desktop/LinuxPractice/FolderB
+# Xóa thư mục FolderA
+rm -r ~/Desktop/LinuxPractice/FolderA
+# Liệt kê file và thư mục (bao gồm file ẩn)
+ls -a ~/Desktop/LinuxPractice

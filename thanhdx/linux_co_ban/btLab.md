@@ -1,31 +1,11 @@
-## Bài tập 1: Tạo tệp và cấp quyền cơ bản
-* Tạo một tệp tên là file1.txt trong thư mục /tmp.
-* Cấp quyền đọc, ghi và thực thi cho chủ sở hữu.
-* Cấp quyền chỉ đọc cho nhóm.
-* Không cấp quyền cho những người khác.
-* Kiểm tra quyền của tệp bằng lệnh ls -l.
+## SUID
+### Tìm Files có SUID
+### Command: find / -perm -u=s -type f 2>/dev/null
+* /: Tìm kiếm bắt đầu từ thư mục gốc (root) của hệ thống, việc này giúp quét toàn bộ files trong tất cả thư mục. Điều này giúp tăng phạm vi tìm kiếm.
+* -perm: Tìm kiếm theo các quyền được chỉ định sau đây.
+* -u=s: Tìm kiếm các file được sở hữu bởi người dùng root. Sử dụng -user [tên user] để tìm kiếm các files của user đó.
+* -type: chỉ định loại file tìm kiếm.
+* f: Chỉ định loại file cần tìm là các regular file, mà không là các thư mục hoặc các file đặc biệt. Hầu hết các file được sử dụng trực tiếp bởi người dùng là các regular file. Ví dụ: file thực thi, file văn bản, file hình ảnh... Điều này giúp tăng hiệu quả tìm kiếm.
+* 2>: có nghĩa là redirect (kí hiệu là >) file channel số 2 tới nơi được chỉ định, file channel này ánh xạ tới stderr (standard error file channel), là nơi các chương trình thường ghi lỗi vào.
+* /dev/null: Đây là nơi được redirect đến, nó là một pseudo-device (thiết bị giả) hay một special character device mà nó cho phép write (ghi) bất cứ thứ gì lên nó, nhưng khi yêu cầu đọc nó, nó không return bất cứ thứ gì.
   
-## Bài tập 2: Thay đổi chủ sở hữu và nhóm
-* Tạo một tệp tên là file2.txt trong thư mục /tmp.
-* Thay đổi chủ sở hữu của tệp thành một người dùng khác (ví dụ: anotheruser).
-* Thay đổi nhóm của tệp thành developers.
-* Kiểm tra lại quyền của tệp bằng lệnh ls -l.
-
-## Bài tập 3: Sử dụng chmod với cách viết bằng chữ
-* Tạo một tệp tên là file3.txt.
-* Sử dụng cách viết bằng chữ để:
-* Cấp quyền đọc và ghi cho chủ sở hữu.
-* Cấp quyền đọc cho nhóm.
-* Không cấp quyền cho những người khác.
-* Kiểm tra quyền của tệp bằng lệnh ls -l.
-
-## Bài tập 4: Phân quyền nâng cao (SUID, SGID, Sticky Bit)
-* Tạo một tệp thực thi tên là script.sh.
-* Cấp quyền SUID cho tệp này.
-* Kiểm tra quyền của tệp để xác nhận SUID đã được thiết lập.
-* Tạo một thư mục tên là shared_folder trong /tmp.
-* Cấp quyền SGID cho thư mục này.
-* Kiểm tra quyền của thư mục.
-* Tạo một thư mục khác tên là sticky_folder.
-* Cấp quyền Sticky Bit cho thư mục này.
-* Kiểm tra quyền của thư mục.
